@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Side Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Codec Pro', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold text-black">
+        Dark Side Music
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-black font-semibold">
+          <li><a href="#inicio" class="hover:text-indigo-600 transition">Inicio</a></li>
+          <li><a href="#quienes-somos" class="hover:text-indigo-600 transition">Quiénes somos</a></li>
+          <li><a href="#servicios" class="hover:text-indigo-600 transition">Servicios</a></li>
+          <li><a href="#portfolio" class="hover:text-indigo-600 transition">Portfolio</a></li>
+          <li><a href="#testimonios" class="hover:text-indigo-600 transition">Testimonios</a></li>
+          <li><a href="#precios" class="hover:text-indigo-600 transition">Precios</a></li>
+          <li><a href="#contacto" class="hover:text-indigo-600 transition">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6" style="background: linear-gradient(135deg, #6908c0 0%, #1a62ff 100%);">
+    <h1 class="text-white text-5xl font-extrabold mb-4 max-w-4xl">Capturamos tu esencia en imagen y sonido</h1>
+    <p class="text-white text-xl mb-8 max-w-3xl">Fotografía profesional · Videoclips musicales · Grabación de canciones</p>
+    <a href="/contacto" class="inline-block bg-white text-indigo-700 font-bold px-8 py-3 rounded-md hover:bg-indigo-100 transition text-xl">¡Inicia tu proyecto! →</a>
+  </section>
+
+  <!-- Quiénes somos Section -->
+  <section id="quienes-somos" class="bg-white py-20 px-6">
+    <div class="container mx-auto max-w-5xl text-center">
+      <h2 class="text-4xl font-bold mb-6">Somos Dark Side Music</h2>
+      <p class="text-gray-700 text-lg mb-8 max-w-3xl mx-auto">
+        Con más de 10 años de trayectoria, unimos técnica y creatividad para llevar tu historia al siguiente nivel. Nuestro equipo de fotógrafos, directores de vídeo y productores musicales ha colaborado con solistas, bandas y marcas de renombre.
+      </p>
+      <a href="/quienes-somos" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition">Conócenos más →</a>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section id="servicios" class="bg-gray-50 py-20 px-6">
+    <div class="container mx-auto max-w-6xl text-center">
+      <h2 class="text-4xl font-bold mb-12">Nuestras soluciones audiovisuales</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto mb-10">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Fotografía Profesional</h3>
+          <p>Sesiones en estudio y exteriores, retrato, producto y lifestyle.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Videoclips Musicales</h3>
+          <p>Conceptualización, dirección y edición de vídeos emotivos y dinámicos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Grabación de Canciones</h3>
+          <p>Estudios equipados, producción, mezcla y masterización llave en mano.</p>
+        </div>
+      </div>
+      <a href="/servicios" class="inline-block bg-gradient-to-r from-purple-700 to-indigo-600 text-white font-semibold px-8 py-3 rounded-md hover:from-purple-800 hover:to-indigo-700 transition">Ver todos los servicios →</a>
+    </div>
+  </section>
+
+  <!-- Portfolio destacado Section -->
+  <section id="portfolio" class="bg-white py-20 px-6">
+    <div class="container mx-auto max-w-6xl text-center">
+      <h2 class="text-4xl font-bold mb-12">Proyectos que hablan por sí solos</h2>
+      <div class="relative max-w-4xl mx-auto">
+        <div id="carousel" class="overflow-hidden rounded-lg shadow-lg">
+          <div class="flex transition-transform duration-500" style="transform: translateX(0%)" >
+            <div class="min-w-full p-6">
+              <h3 class="text-2xl font-semibold mb-2">Urban Style</h3>
+              <p>Fotografía</p>
+            </div>
+            <div class="min-w-full p-6">
+              <h3 class="text-2xl font-semibold mb-2">Luz de Neón</h3>
+              <p>Videoclip</p>
+            </div>
+            <div class="min-w-full p-6">
+              <h3 class="text-2xl font-semibold mb-2">Voces del Alma</h3>
+              <p>Grabación</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center space-x-4 mt-6">
+          <button id="prevBtn" aria-label="Previous" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">‹</button>
+          <button id="nextBtn" aria-label="Next" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">›</button>
+        </div>
+      </div>
+      <a href="/portfolio" class="inline-block mt-10 bg-indigo-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-indigo-700 transition">Ver Portfolio completo →</a>
+    </div>
+  </section>
+
+  <!-- Testimonios Section -->
+  <section id="testimonios" class="py-20 px-6" style="background: linear-gradient(135deg, #6908c0 0%, #1a62ff 100%);">
+    <div class="container mx-auto max-w-6xl text-center text-white">
+      <h2 class="text-4xl font-bold mb-12">Lo que dicen nuestros clientes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
+          <p class="mb-4">🗣️ “El videoclip superó todas mis expectativas. ¡Súper profesionales!” – María Q.</p>
+        </div>
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
+          <p class="mb-4">🗣️ “La sesión de fotos de producto nos ayudó a triplicar ventas online.” – Startup X.</p>
+        </div>
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
+          <p class="mb-4">🗣️ “La calidad de grabación es espectacular; su equipo sabe lo que hace.” – Banda Y.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paquetes y precios Section -->
+  <section id="precios" class="bg-white py-20 px-6">
+    <div class="container mx-auto max-w-6xl text-center">
+      <h2 class="text-4xl font-bold mb-12">Elige tu paquete ideal</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-300 text-left">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 px-6 py-4 w-1/3">Básico ($70)</th>
+              <th class="border border-gray-300 px-6 py-4 w-1/3">Vídeo Pro ($150)</th>
+              <th class="border border-gray-300 px-6 py-4 w-1/3">Estudio Total ($300)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-6 py-4">• 10 fotos editadas + el material en crudo</td>
+              <td class="border border-gray-300 px-6 py-4">• Video Lyrics de 3 min</td>
+              <td class="border border-gray-300 px-6 py-4">• Fotografía + vídeo oficial</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-6 py-4">• 1 h de sesión</td>
+              <td class="border border-gray-300 px-6 py-4">• Dirección creativa</td>
+              <td class="border border-gray-300 px-6 py-4">• Guion</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-6 py-4">• Entrega 3 días</td>
+              <td class="border border-gray-300 px-6 py-4">• Edición profesional</td>
+              <td class="border border-gray-300 px-6 py-4">• Postproducción</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-6 py-4 text-center">
+                <a href="/contacto" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-indigo-700 transition">Reservar ahora</a>
+              </td>
+              <td class="border border-gray-300 px-6 py-4 text-center">
+                <a href="/contacto" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-indigo-700 transition">Quiero mi Video Lyrics</a>
+              </td>
+              <td class="border border-gray-300 px-6 py-4 text-center">
+                <a href="/contacto" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-2 rounded-md hover:bg-indigo-700 transition">Trabajo Completo</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Llamada final a la acción Section -->
+  <section id="llamada-accion" class="py-20 px-6" style="background-color: #3846ea;">
+    <div class="container mx-auto max-w-6xl text-center text-white">
+      <h2 class="text-5xl font-extrabold mb-12">¿Listo para dar vida a tu proyecto audiovisual?</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-6 max-w-4xl mx-auto">
+        <a href="/contacto" class="bg-white text-indigo-700 font-bold px-8 py-4 rounded-md hover:bg-indigo-100 transition text-lg flex items-center justify-center">📸 Reserva una sesión</a>
+        <a href="/contacto" class="bg-white text-indigo-700 font-bold px-8 py-4 rounded-md hover:bg-indigo-100 transition text-lg flex items-center justify-center">🎥 Planifica tu videoclip</a>
+        <a href="/contacto" class="bg-white text-indigo-700 font-bold px-8 py-4 rounded-md hover:bg-indigo-100 transition text-lg flex items-center justify-center">🎙️ Graba tu canción</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contacto Section -->
+  <footer id="contacto" class="bg-black text-gray-300 py-12 px-6">
+    <div class="container mx-auto max-w-6xl text-center">
+      <div class="mb-6">
+        <a href="https://www.instagram.com/yoowtayson/" target="_blank" rel="noopener noreferrer" class="inline-block mx-4 hover:text-white transition">Instagram</a>
+        <a href="https://www.tiktok.com/@yoowtayson" target="_blank" rel="noopener noreferrer" class="inline-block mx-4 hover:text-white transition">TikTok</a>
+        <a href="https://wa.me/+593992242906" target="_blank" rel="noopener noreferrer" class="inline-block mx-4 hover:text-white transition">WhatsApp</a>
+      </div>
+      <p class="text-sm">&copy; 2023 Dark Side Music. Todos los Derechos Reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const carousel = document.querySelector('#carousel > div');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+    const totalItems = carousel.children.length;
+
+    function updateCarousel() {
+      carousel.style.transform = "translateX(-" + (currentIndex * 100) + "%)";
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalItems;
+      updateCarousel();
+    });
+  </script>
+
+ </body>
+ </html>
